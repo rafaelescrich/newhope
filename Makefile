@@ -18,7 +18,7 @@ test:
 
 clean: 
 	$(GOCLEAN)
-	rm -f $(BINARY_NAME)*
+	rm -f $(BINARY_NAME)
 
 run: build
 	env $$(grep -v '^#' $(ENV_FILE) | xargs) ./$(BINARY_NAME)
